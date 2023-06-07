@@ -4,7 +4,7 @@ require_once 'autoload.php';
 
 if(isset($_GET['controller'])){
 
-    $name_controller = $_GET['controller'].'controller';
+    $name_controller = $_GET['controller'].'Controller';
 
 }else{
 
@@ -13,7 +13,7 @@ if(isset($_GET['controller'])){
 
 }
 
-if(class_exist($name_controller)){
+if(class_exists($name_controller)){
 
     $controller = new $name_controller();
 
