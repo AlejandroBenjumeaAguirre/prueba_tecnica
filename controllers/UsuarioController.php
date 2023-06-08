@@ -4,7 +4,8 @@ class usuarioController {
 
     public function index(){
     
-        echo "Controlador usuarios, accion index";
+        // vista formulario
+        require_once 'views/form.php';
     
     }
 

@@ -2,6 +2,9 @@
 
 require_once 'autoload.php';
 
+require_once './views/layout/header.php';
+
+
 if(isset($_GET['controller'])){
 
     $name_controller = $_GET['controller'].'Controller';
@@ -32,5 +35,6 @@ if(class_exists($name_controller)){
 
 }
 
+require_once './views/layout/footer.php';
 
 ?>
